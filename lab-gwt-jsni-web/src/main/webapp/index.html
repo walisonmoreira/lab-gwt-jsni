@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menor Maior REST</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <script src="lib/jquery/js/jquery.min.js"></script>
+  <script src="ui/ui.nocache.js"></script>
+  <script>
+  
+    function calcularMaioridadeClick() {
+      var idade = $("input[name=idade]").val();
+      alert(calcularMaioridade(idade));
+    }
+  
+    function calcularParOuImparClick() {
+      var numero = $("input[name=numero]").val();
+      alert(calcularParOuImpar(numero));
+    }
+
+    </script>
+</head>
+<body>
+  <div class="modal-dialog" style="margin-bottom:0">
+    <div class="modal-content">
+      <div class="panel-heading">
+        <h3 class="panel-title">Maior ou menor de idade?</h3>
+      </div>
+      <div class="panel-body">
+        <form name="formulario">
+          <fieldset>
+            <div class="form-group">
+              <input class="form-control" placeholder="Idade" name="idade" type="text">
+            </div>
+            <button type="button" class="btn btn-sm btn-success" onclick="calcularMaioridadeClick()">Calcular</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-dialog" style="margin-bottom:0">
+    <div class="modal-content">
+      <div class="panel-heading">
+        <h3 class="panel-title">Par ou Ímpar?</h3>
+      </div>
+      <div class="panel-body">
+        <form name="formulario">
+          <fieldset>
+            <div class="form-group">
+              <input class="form-control" placeholder="Número" name="numero" type="text">
+            </div>
+            <button type="button" class="btn btn-sm btn-success" onclick="calcularParOuImparClick()">Calcular</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
